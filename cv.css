@@ -6,7 +6,6 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
@@ -96,6 +95,9 @@ footer{
 #website{display: none;}
 
 @media (min-width: 600px) {
+    body{
+        align-items: center;
+    }
     .cv-wrapper {
       flex-direction: row;
       justify-content: space-around;
