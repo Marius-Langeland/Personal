@@ -3,21 +3,15 @@
     --clr-backround : #f6f1f1;
 }
 
+*{box-sizing: border-box;}
+
 body{
+    font-family: 'Nunito Sans', sans-serif;
+
+    margin: 0;
     display: flex;
     justify-content: center;
-}
-
-.cv-wrapper{
-    display: flex;
-    margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    background-color: var(--clr-backround);
-    padding: 1em 1em 4em;
-    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 #img-placeholder{
@@ -31,49 +25,61 @@ body{
     justify-content: center;
 }
 
-h1{margin-bottom: 5px; padding-bottom: 5px; font-size: 1.5em;}
-h1, h3{
-    border-bottom: 1px solid black;
-    text-align: center;
-    width: 10em;
-    text-transform: uppercase;
-}
-
-section:not(.cv-wrapper){margin: 1em 2em;}
-section:not(.cv-wrapper), section:not(.cv-wrapper)>div{
+.cv-wrapper{
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
-}
-
-#profile{
-    background-color: var(--clr-primary); 
-    border-radius: 1em;
-    padding: 2em 1em 4em;
-    max-width: 300px;
-    align-self: center;
-    margin-top: 3em;
-}
-#profile, #profile>div{
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
     align-items: center;
 }
 
-#profession{
-    font-size: 1.2em;
-    margin-bottom: 1em;
+h1{margin-bottom: 5px; padding-bottom: 5px; width: 200px; font-size: 1.3em;}
+h1, h3{
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3{width: 150px; margin-bottom: 5px; padding-bottom: 5px;}
+
+#profile{
+    background-color: var(--clr-backround);
+    width: 100%;
+    border-radius: .5em;
+    padding: 2em;
 }
 
+#profile, #qualifications, div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile div{align-items: center;}
+#background{
+    background-color: var(--clr-primary);
+    width: min-content;
+    height: 680px;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+
+/*#region Text placement*/
+
+#contact{
+    text-align: center;
+}
 #about{
-    max-width: 200px;
+    width: 180px;
 }
 
-#cv{
-    padding-bottom: 2em;
-    min-width: 200px;
-    max-width: 200px;
-    align-self: center;
-}
+/*#endregion*/
 
+
+/*#region Text styling*/
 .title{
     font-weight: bold;
 }
@@ -87,14 +93,14 @@ section:not(.cv-wrapper), section:not(.cv-wrapper)>div{
     font-size: .8em
 }
 
+/*#endregion*/
+
 #website{display: none;}
 
 @media (min-width: 600px) {
-    body{
-        align-items: center;
-    }
     .cv-wrapper {
-      flex-direction: row;
-      justify-content: space-around;
+        flex-direction: row;
+        
+        background-color: var(--clr-backround);
     }
-  }
+}
