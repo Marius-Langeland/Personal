@@ -61,7 +61,7 @@ section:not(.cv-wrapper), section:not(.cv-wrapper)>div{
 
 #profession{
     font-size: 1.2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #about{
@@ -69,6 +69,7 @@ section:not(.cv-wrapper), section:not(.cv-wrapper)>div{
 }
 
 #cv{
+    padding-bottom: 2em;
     max-width: 200px;
     align-self: center;
 }
@@ -84,12 +85,6 @@ section:not(.cv-wrapper), section:not(.cv-wrapper)>div{
 
 .langdesc{
     font-size: .8em
-}
-
-footer{
-    margin-top: 2em;
-    height: 100px;
-    background: var(--clr-primary);
 }
 
 #website{display: none;}
