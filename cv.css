@@ -88,6 +88,8 @@ footer{
     background: var(--clr-primary);
 }
 
+#website{display: none;}
+
 @media (min-width: 600px) {
     .cv-wrapper {
       flex-direction: row;
