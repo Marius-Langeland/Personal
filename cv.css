@@ -6,6 +6,8 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .cv-wrapper{
@@ -16,9 +18,8 @@ body{
     width: 100%;
     max-width: 600px;
     background-color: var(--clr-backround);
-    padding-bottom: 2em;
+    padding: 1em 1em 4em;
     border-radius: 8px;
-    margin-top: 2em;
 }
 
 #img-placeholder{
@@ -44,13 +45,13 @@ section:not(.cv-wrapper){margin: 1em 2em;}
 section:not(.cv-wrapper), section:not(.cv-wrapper)>div{
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 #profile{
     background-color: var(--clr-primary); 
     border-radius: 1em;
-    padding: 2em 1em;
+    padding: 2em 1em 4em;
     max-width: 300px;
     align-self: center;
     margin-top: 3em;
