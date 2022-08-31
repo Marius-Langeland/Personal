@@ -1,0 +1,46 @@
+:root{
+    --clr-background: rgba(175, 190, 205, 0.072);
+}
+
+body{margin: 0;}
+
+#blogg-skolestart{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+iframe{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#cv{background-color: var(--clr-background); padding-top: 2em;}
+
+.hide-browser{display: none;}
+#cv-browser{width: 100%; max-width: 640px;}
+#cv-mobile{max-width: 300px;}
+#cv-browser,
+iframe{height: 90vh;}
+
+
+
+#søknader{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: xx-small;
+    color: rgb(206, 17, 70);
+}
+#søknader>span{
+    background-color: var(--clr-background);
+    padding: 1em 2em;
+    margin: 1em 3em;
+    border-radius: 1em;
+}
+
+@media screen and (min-width: 690px) {
+    .hide-browser{display: unset;}
+    #cv{
+        border-radius: 1em;
+    }
+}

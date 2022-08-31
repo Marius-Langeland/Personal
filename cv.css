@@ -4,6 +4,11 @@
 }
 
 *{box-sizing: border-box;}
+#website,
+#references, #references *,
+#socials, #socials *,
+#img-placeholder
+{display: none;}
 
 body{
     font-family: 'Nunito Sans', sans-serif;
@@ -20,7 +25,7 @@ body{
     background-color: rgb(60, 60, 60);
     border-radius: 50%;
     color: white;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -125,11 +130,7 @@ div .title:first-of-type{
 
 /*#endregion*/
 
-#website,
-#references, #references *,
-#socials, #socials *,
-#img-placeholder
-{display: none;}
+
 
 @media (min-width: 530px) {
     #profile{width: unset;}
