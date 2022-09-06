@@ -21,33 +21,37 @@ h1, h3 { text-align: center; }
 
 /* #region iframe manipulation */
 
-iframe{
+.collapsed:not(.expanded) iframe{
     pointer-events: none;
-    filter: brightness(30%);
+    filter: brightness(45%);
+    max-height: unset;
 }
 
 /* #endregion */
 
-/* #region Søknader */
 #søknader {
     display: flex;
     flex-direction: column;
 }
-
 #søknader>span{
-    border-radius: 4px;
+    max-width: 450px;
     font-size: smaller;
-    margin: 1em;
-    padding: 1em;
     background-color: rgb(235, 191, 186);
     color: rgb(68, 55, 37);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 4px;
+}
+
+/* #region Collapsibles */
+
+.collapsed{
     overflow: hidden;
     position: relative;
-    max-width: 450px;
 }
-#søknader>span:not(.expanded){height: 100px;}
-.expanded .extender{display: none;}
-.extender{
+.collapsed:not(.expanded){max-height: 100px;}
+.expanded .extension-indicator{display: none;}
+.extension-indicator{
     display: flex;
     position: absolute;
     bottom: 0;
@@ -70,10 +74,7 @@ dot{
 }
 /* #endregion */
 
-.bg-wrap { background: rgb(215, 223, 232);}
-
-iframe {width: 100%; height: 100vh;}
-
 /* Responsive */
 /* Mobile-first design */
-#cv-browser {display: none;}
+.hide-on-browser {display: none;}
+.hide-on-mobile {display: none;}
