@@ -24,7 +24,7 @@ h1, h3 { text-align: center; }
 .collapsed:not(.expanded) iframe{
     pointer-events: none;
     filter: brightness(45%);
-    max-height: unset;
+    background-color: rgb(214, 214, 214);
 }
 
 /* #endregion */
@@ -55,12 +55,12 @@ h1, h3 { text-align: center; }
     display: flex;
     position: absolute;
     bottom: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.544);
     color: white;
     width: 100%;
     height: 2em;
     text-align: center;
-    margin-left: -1em;
     align-items: center;
     justify-content: center;
 }
