@@ -1,1 +1,1 @@
-$(function(){$(".entry").load("Blogposts/skolestart.html");});
+$(function(){$(".entry").load("../Blog/Blogposts/skolestart.html");});
