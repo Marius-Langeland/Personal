@@ -1,9 +1,57 @@
 body {margin: 0;}
 
-h1, .week { text-align: center; }
-#søknader { text-align: left; }
+h1, h3 { text-align: center; }
 
-.bg-wrap {background: rgba(0, 0, 0, 0.63);}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro{
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    text-align: justify;
+    max-width: 340px;
+}
+
+iframe{display: none;}
+
+#søknader {
+    display: flex;
+    flex-direction: column;
+}
+#søknader>span{
+    font-size: smaller;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(235, 191, 186);
+    color: rgb(68, 55, 37);
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.extender{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    margin-left: -1em;
+}
+dot{
+    width: 2px;
+    height: 2px;
+    background-color: aqua;
+}
+
+.bg-wrap { background: rgb(215, 223, 232);}
 
 iframe {width: 100%; height: 100vh;}
 
