@@ -1,5 +1,7 @@
 $(function(){
     $("#søknader>span").click(function(){
-        $("#søknader>span").toggleClass("expanded");
+        $(this).toggleClass("expanded");
+        if(!$(this).hasClass("expanded"))
+            this.scrollIntoView({behavior: "smooth", block: "center"});
     });
 });

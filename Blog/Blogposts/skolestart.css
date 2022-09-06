@@ -19,13 +19,21 @@ h1, h3 { text-align: center; }
     max-width: 340px;
 }
 
-iframe{display: none;}
+/* #region iframe manipulation */
+
+iframe{
+    pointer-events: none;
+    filter: brightness(30%);
+}
+
+/* #endregion */
 
 /* #region Søknader */
 #søknader {
     display: flex;
     flex-direction: column;
 }
+
 #søknader>span{
     border-radius: 4px;
     font-size: smaller;
@@ -35,11 +43,10 @@ iframe{display: none;}
     color: rgb(68, 55, 37);
     overflow: hidden;
     position: relative;
-
-    height: 100px;
+    max-width: 450px;
 }
-.expanded{height: auto;}
-
+#søknader>span:not(.expanded){height: 100px;}
+.expanded .extender{display: none;}
 .extender{
     display: flex;
     position: absolute;
