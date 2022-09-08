@@ -1,0 +1,47 @@
+body{
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'Dosis', sans-serif; 
+    overflow: hidden;
+
+    background-color: salmon;
+}
+* {box-sizing: border-box;}
+
+.table-of-content{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50px;
+    z-index: 1;
+    justify-content: center;
+    padding: 1em;
+}
+.progress{
+    width: 10px;
+    min-height: 10px;
+    background-color: rgba(3, 3, 255, 0.155);
+    border-radius: 1em;
+}
+
+.page{
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    top: 100vh;
+    transition: top 2s ease, opacity .5s ease;
+}
+
+.target{top:0 !important;}
+.fade{
+    opacity: 0; 
+    top: -20vh !important;
+}

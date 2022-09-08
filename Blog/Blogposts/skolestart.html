@@ -5,44 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../Blog/Blogposts/skolestart.css">
-
+    <link rel="stylesheet" href="../../Blog/Blogposts/exp.css">
+    
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="../../Blog/Blogposts/skolestart.js"></script>
+    <script src="../../Blog/Blogposts/test.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
-        <h1>Blogg fra skolestart</h1>
-        <div class="post">
+    <div class="table-of-content">
+        <div class="progress"></div>
+    </div>
+
+        <div class="page">
+            <h1>2022</h1>
+        </div>
+
+        <div class="post page">
             <h3>Uke 34</h3>
             <span class="intro">
                 Vi begynte vi med å forberede oss til utplassering. Vi skal lage søknad og CV, så søke om praksisplass.
                 Jeg var ikke helt fornøyd med min tidligere CV, så jeg begynte med å bygge en ny som er web-basert.
             </span>
             
+            <input type="range" min="0" max="100" value="50" name="" id="embedded-cv-slider">
             <div class="cv">
-                <h4 class="hide-on-mobile">Browser</h4>
-                <div class="collapsed hide-on-mobile">
-                    <iframe src="../../resources/cv.html" frameborder="0"></iframe>
-                    <div class="extension-indicator"></div>
-                </div>
-                
-                <h4 class="hide-on-browser">Mobil</h4>
-                <div class="collapsed">
+                <div class="embedded-cv collapsed">
                     <iframe src="../../resources/cv.html" frameborder="0"></iframe>
                     <div class="extension-indicator"></div>
                 </div>
             </div>
         </div>
 
-        <div class="post">
+        <div class="post page">
             <h3>Uke 35</h3>
             <span class="intro">
                 Denne uken har jeg brukt til å finne arbeidsplasser som kan ta imot utplassering. Fra tirsdagen har jeg søkt på to virksomheter, Intility og Finanstilsynet. Jeg har laget to forskjellige søknader til begge, og føler den nyeste søknaden sent til finanstilsynet er bedre.
             </span>
 
             <div id="søknader">
-                <span class="collapsed">
+                <span class="collapsed envelope">
                     <p> Hei! <br>
                     Jeg heter Marius Langeland, er 22 år, og ønsker å søke om utplassering hos dere på Intility AS, og jeg håper dere fortsatt er interesserte i å ta imot.</p>
     
@@ -64,7 +69,7 @@
                     <div class="extension-indicator">
                     </div>
                 </span>
-                <span class="collapsed">
+                <span class="collapsed envelope">
                     <p>Hei! <br>
                     Jeg heter Marius Langeland, og er 22 år. Jeg går nå på andre år i informasjonsteknologi på Røyken videregående skole, hvor jeg skal ut i praksis. Dermed ønsker jeg å søke om utplassering hos dere i finanstilsynet, og jeg håper dere er interesserte. <br> Jeg skal ut i praksis hver tirsdag, og det varer fram til april.</p>
     
@@ -80,6 +85,12 @@
                     <div class="extension-indicator"></div>
                 </span>
             </div>
+        </div>
+
+        <div class="post page">
+            <h3>Uke 36</h3>
+            Jeg har begynt å bygge ut en egen blogg-løsning. <br>
+            Jeg søkte også om IT praksis i Asker området for videregående skoler.
         </div>
 </body>
 </html>
