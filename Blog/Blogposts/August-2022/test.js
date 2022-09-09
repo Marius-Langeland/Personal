@@ -26,7 +26,7 @@ function scroll(delta){
 }
 
 $(function(){
-    size = $('.page').length;
+    size = $('.page').length - 1;
     scroll(0);
     addEventListener('wheel', (e) => scroll(e.deltaY / 1000));
 });
