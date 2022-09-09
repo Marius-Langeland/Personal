@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../Blog/Blogposts/exp.css">
+    <link rel="stylesheet" href="page-layout.css">
+    <link rel="stylesheet" href="skolestart.css">
     
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="../../Blog/Blogposts/test.js"></script>
+    <script src="test.js"></script>
+    <script src="skolestart.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,24 +22,17 @@
         <div class="progress"></div>
     </div>
 
-        <div class="page">
+        <div class="page" id="blog-title" data-color="#233748">
             <h1>2022</h1>
         </div>
 
-        <div class="post page">
+        <div class="page" id="uke-34" data-color="#505070">
             <h3>Uke 34</h3>
-            <span class="intro">
+            <span class="intro above">
                 Vi begynte vi med å forberede oss til utplassering. Vi skal lage søknad og CV, så søke om praksisplass.
                 Jeg var ikke helt fornøyd med min tidligere CV, så jeg begynte med å bygge en ny som er web-basert.
             </span>
-            
-            <input type="range" min="0" max="100" value="50" name="" id="embedded-cv-slider">
-            <div class="cv">
-                <div class="embedded-cv collapsed">
-                    <iframe src="../../resources/cv.html" frameborder="0"></iframe>
-                    <div class="extension-indicator"></div>
-                </div>
-            </div>
+            <iframe src="../../resources/cv.html" frameborder="0"></iframe>
         </div>
 
         <div class="post page">
