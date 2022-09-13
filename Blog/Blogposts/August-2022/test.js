@@ -27,7 +27,8 @@ function scroll(delta){
 
 $(function(){
     size = $('.page').length - 1;
-    $('.full-height, .page').css('height', window.innerHeight);
+    var setSize = () => $('.full-height, .page').css('height', window.innerHeight);
+    setSize();
     scroll(0);
 
     //#region Wheel and touch scroll
@@ -35,6 +36,7 @@ $(function(){
     let start = 0;
     let end = 0;
 
+    addEventListener('resize', setSize);
     addEventListener('touchstart', (e) => start = e.touches[0].pageY);
     addEventListener('touchmove', (e) => end = e.touches[0].pageY);
     addEventListener('touchend', (e) => onScroll(start - end));
