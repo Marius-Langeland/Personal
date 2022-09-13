@@ -1,3 +1,8 @@
+:root{
+    --clr-progress-bar: rgb(33, 33, 49);
+}
+
+
 body{
     margin: 0; 
     height: 100vh;
@@ -13,23 +18,43 @@ body{
 }
 * {box-sizing: border-box;}
 
+/* Table of content */
+
 .table-of-content{
     position: absolute;
     display: flex;
+    flex-direction: column;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 50px;
     z-index: 1;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
     padding: 1em;
 }
-.progress{
+
+.progress-parent{
+    height: 100%;
+    background-color: var(--clr-progress-bar);
     width: 10px;
-    min-height: 10px;
-    background-color: rgba(13, 5, 17, 0.347);
-    border-radius: 1em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.progress{
+    transition: flex-grow .5s ease;
+}
+
+.progress-display{
+    border-radius: 1em;
+    width: 30px;
+    height: 30px;
+    background-color: var(--clr-progress-bar);
+}
+
+
+/* PAGE */
 
 .page{
     display: flex;
@@ -45,9 +70,32 @@ body{
     transform: scale(.3, .2);
     top: 100vh;
     opacity: 0%;
-    transition: top 1.75s ease, opacity 0.5s ease, transform 1.3s ease;
+    transition: top 1.3s ease, opacity 0.5s ease, transform 1.8s ease;
 }
 
 .above{top:-100vh;}
 .below{top: 100vh;}
 .target{top: 0; opacity: 100%; transform: scale(100%)}
+
+
+/* ICONS */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.go-down{
+    width: fit-content;
+    height: fit-content;
+    font-size: 50px !important;
+    border-radius: 50%;
+    background-color: rgba(48, 42, 42, 0.279);
+    transition: box-shadow .5s ease;
+    cursor: pointer;
+}
+.go-down:hover{
+    box-shadow: 0 0 5px #aab9c54d;
+}

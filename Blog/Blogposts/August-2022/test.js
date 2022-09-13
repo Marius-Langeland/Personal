@@ -13,7 +13,7 @@ function scroll(delta){
             current = Math.floor(target);
             $('.target').addClass(c).removeClass('target');
             let obj = $(`.page:nth-of-type(${current+2})`);
-            $(obj).removeClass('above below')
+            $(obj).removeClass('above below');
             $(obj).addClass("target");
 
             let clr = $(obj).data('color');
@@ -21,12 +21,33 @@ function scroll(delta){
                 $('body').css('background-color', clr);
         }
 
-        $('.progress').css('height', `${target / size * 100}%`)
+        $('.progress').css('flex-grow', `${target / size}`)
     }
 }
 
 $(function(){
     size = $('.page').length - 1;
     scroll(0);
-    addEventListener('wheel', (e) => scroll(e.deltaY / 1000));
+
+    let scrolled = false;
+    let start = 0;
+
+    addEventListener('touchstart', (e) => start = e.touches[0].pageY);
+    addEventListener('touchend', (e) => onScroll(start - e.touches[0].pageY));
+    addEventListener('wheel', (e) => onScroll(e.deltaY));
+
+    async function onScroll(delta){
+        if(Math.abs(delta) > 50 && !scrolled)
+        {
+            scroll(Math.sign(delta));
+            scrolled = true;
+
+            await new Promise(resolve => setTimeout(resolve, 300));
+            scrolled = false;
+        }
+    }
+
+    $('.go-down').click(function(){
+        scroll(1);
+    });
 });
