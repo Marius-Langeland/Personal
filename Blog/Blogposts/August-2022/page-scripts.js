@@ -2,7 +2,6 @@ let current = -1;
 let target = 0;
 let size = 0;
 
-
 function scroll(delta){
     if(delta != undefined)
     {
@@ -34,6 +33,7 @@ $(function(){
     let start = 0;
     let end = 0;
 
+    // Fix mobile height being offset by toolbar
     if(window.innerHeight < 1200){
         var setSize = () => $('.full-height, .page').css('height', window.innerHeight);
         addEventListener('resize', setSize);
@@ -56,7 +56,19 @@ $(function(){
     }
     //#endregion
 
-    $('.go-down').click(function(){
-        scroll(1);
+    let table_of_content = "<ol>";
+    let headers = [];
+    $('.page h3').each(function(index) {
+        table_of_content += `<li>${$(this).html()}</li>`;
+        headers[index] = this;
+    });
+
+    table_of_content += "</ol>";
+    $('.table-of-content').append(table_of_content);
+    $('.table-of-content li').each(function(index){
+        $(this).click(function(){
+            target = index+1;
+            scroll(0);
+        });
     });
 });

@@ -1,21 +1,8 @@
-#uke-34{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr 1fr 3fr;
-    grid-gap: 2em;
-
-    grid-template-areas: 
-    "i ."
-    "i t"
-    "i p"
-    "i .";
-
-    text-align: center;
-}
 #uke-34 iframe{
     height: 100%;
     width: 100%;
+    max-width: 630px;
     grid-area: i;
 }
 #uke-34 h3 {grid-area: t;}
-#uke-34 p{grid-area: p;}
+#uke-34 p{grid-area: p; max-width: 400px;}
