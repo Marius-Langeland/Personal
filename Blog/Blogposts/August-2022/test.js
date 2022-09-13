@@ -31,9 +31,11 @@ $(function(){
 
     let scrolled = false;
     let start = 0;
+    let end = 0;
 
     addEventListener('touchstart', (e) => start = e.touches[0].pageY);
-    addEventListener('touchend', (e) => onScroll(start - e.touches[0].pageY));
+    addEventListener('touchmove', (e) => end = e.touches[0].pageY);
+    addEventListener('touchend', (e) => onScroll(start - end));
     addEventListener('wheel', (e) => onScroll(e.deltaY));
 
     async function onScroll(delta){
