@@ -27,6 +27,7 @@ function scroll(delta){
 
 $(function(){
     size = $('.page').length - 1;
+    $('body').css('height', window.innerHeight);
     scroll(0);
 
     //#region Wheel and touch scroll
