@@ -40,15 +40,15 @@ body{
     border-radius: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
 .progress{
     transition: flex-grow .5s ease;
 }
 
 .progress-display{
-    border-radius: 1em;
-    width: 30px;
+    border-radius: 50% 5px 5px 50%;
+    width: 20px;
     height: 30px;
     background-color: var(--clr-progress-bar);
 }

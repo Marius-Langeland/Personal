@@ -29,6 +29,7 @@ $(function(){
     size = $('.page').length - 1;
     scroll(0);
 
+    //#region Wheel and touch scroll
     let scrolled = false;
     let start = 0;
     let end = 0;
@@ -48,6 +49,7 @@ $(function(){
             scrolled = false;
         }
     }
+    //#endregion
 
     $('.go-down').click(function(){
         scroll(1);
