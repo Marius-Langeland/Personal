@@ -1,3 +1,8 @@
+.page{
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #uke-34 iframe{
     height: 100%;
     width: 100%;
