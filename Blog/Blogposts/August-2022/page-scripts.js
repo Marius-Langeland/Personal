@@ -56,18 +56,18 @@ $(function(){
     }
     //#endregion
 
-    let table_of_content = "<ol>";
+    let table_of_content = "<ol><li>Start</li>";
     let headers = [];
     $('.page h3').each(function(index) {
         table_of_content += `<li>${$(this).html()}</li>`;
         headers[index] = this;
     });
 
-    table_of_content += "</ol>";
+    table_of_content += "<li>End</li></ol>";
     $('.table-of-content').append(table_of_content);
     $('.table-of-content li').each(function(index){
         $(this).click(function(){
-            target = index+1;
+            target = index;
             scroll(0);
         });
     });
