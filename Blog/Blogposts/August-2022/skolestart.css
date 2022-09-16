@@ -11,3 +11,11 @@
 }
 #uke-34 h3 {grid-area: t;}
 #uke-34 p{grid-area: p; max-width: 400px;}
+
+path{
+    fill: none;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: 0.2s;
+}
