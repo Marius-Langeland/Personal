@@ -12,10 +12,26 @@
 #uke-34 h3 {grid-area: t;}
 #uke-34 p{grid-area: p; max-width: 400px;}
 
-path{
-    fill: none;
-    stroke: #000;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: 0.2s;
+svg{
+    width: 150px;
+    cursor: pointer;
 }
+#envelope-fill{
+    fill: rgb(19, 19, 39);
+}
+#envelope-cover-l {
+    fill: rgb(144, 162, 205);
+}
+#envelope-cover-r {
+    fill: rgb(67, 108, 184);
+}
+#envelope-lid{
+    fill: rgb(19, 19, 39);
+    transition: .4s;
+}
+
+svg:hover #envelope-lid{
+    d: path("M 900 300 L 0 300 L 400 50 Q 450 19 500 50 Z");
+}
+
+#søknader{display: none;}
