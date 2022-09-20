@@ -1,10 +1,13 @@
 function getCompanyTemplate(name: string){
-    return  `<section class="company" id="${name}">
-                <div class="company-name">Company name</div>
-                <div class="directors"></div>
-                <div class="productive-workers"></div>
-                <div class="unproductive-workers"></div>
-            </section>`;
+    let e =  document.createElement('section');
+    e.className = "company-name";
+    e.id = name;
+    e.innerHTML = 
+    `<div class="company-name">${name}</div>
+     <div class="directors"></div>
+     <div class="productive-workers"></div>
+     <div class="unproductive-workers"></div>`;
+    return e;
 }
 
 function getPersonTemplate(name: string){
@@ -38,8 +41,10 @@ function hireWorker(person: Person, company: string, titles: string, ...shifts: 
     let existingCompany = document.getElementById(company);
     if(existingCompany == undefined){
         let newCompanyHTML = getCompanyTemplate(company);
-        document.body.append(newCompanyHTML);
+        document.body.appendChild(newCompanyHTML);
     }
 }
 
-hireWorker(new Person("Marius"), "Pharma", "Director");
+window.onload = function(){
+    hireWorker(new Person("Marius"), "Pharma", "Director");
+}
