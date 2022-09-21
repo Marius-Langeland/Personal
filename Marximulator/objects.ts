@@ -1,12 +1,12 @@
 function getCompanyTemplate(name: string){
     let e =  document.createElement('section');
-    e.className = "company-name";
+    e.className = "company";
     e.id = name;
     e.innerHTML = 
-    `<div class="company-name">${name}</div>
-     <div class="directors"></div>
-     <div class="productive-workers"></div>
-     <div class="unproductive-workers"></div>`;
+    `<h3 class="company-name">${name}</h3>
+     <div class="directors">Directors</div>
+     <div class="unproductive-workers">Managers</div>
+     <div class="productive-workers">Workers</div>`;
     return e;
 }
 

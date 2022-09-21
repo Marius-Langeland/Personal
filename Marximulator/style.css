@@ -3,30 +3,12 @@ body{
     background-color: rgb(255, 204, 214);
 }
 
-.menu, .company{
+.company{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
     height: 100vh;
 }
 
-.menu{
-    font-size: 2em;
-    display: none;
-}
-
-.choice{
-    border-radius: 5em;
-    padding: 1em;
-    width: 300px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 0 0 .8em rgb(182, 80, 80);
-    transition: box-shadow 1.2s ease;
-}
-.choice:hover{
-    box-shadow: 0 0 .5em rgb(234, 161, 161);
-    transition: box-shadow .5s ease;
-}
