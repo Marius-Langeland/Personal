@@ -95,7 +95,6 @@ body{
     overflow: hidden;
     padding: 1em 2em 1em 1em;
 
-    transform: scale(.3, .2);
     top: 100vh;
     opacity: 0%;
     transition: top .9s ease, opacity 1s ease .2s, transform .8s ease;
@@ -103,6 +102,7 @@ body{
 
 .above{top:-100vh;}
 .below{top: 100vh;}
+.page:not(.target){transform: scale(.3, .2);}
 .target{top: 0; opacity: 100%; transform: scale(100%)}
 
 
