@@ -1,5 +1,5 @@
 let current = -1;
-let target = 0;
+let target = 4;
 let size = 0;
 
 function scroll(delta){
@@ -26,6 +26,7 @@ function scroll(delta){
 
 $(function(){
     size = $('.page').length - 1;
+    $('[data-scroll]').click(function(){scroll($(this).data('scroll'))});
     scroll(0);
 
     //#region Wheel and touch scroll
