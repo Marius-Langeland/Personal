@@ -54,7 +54,7 @@ body{
     z-index: 3;
 }
 
-.table-of-content:hover, .table-of-content:focus{
+.table-of-content:hover{
     width: 200px;
     background-color: #192c49ad;
 }
