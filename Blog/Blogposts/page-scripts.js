@@ -1,5 +1,5 @@
 let current = -1;
-let target = 2;
+let target = 4;
 let size = 0;
 
 function scroll(delta){
@@ -10,10 +10,15 @@ function scroll(delta){
         if(current != Math.floor(target)){
             let c = Math.sign(current - target) == -1 ? 'above' : 'below';
             current = Math.floor(target);
-            $('.target').addClass(c).removeClass('target');
+
+            // Set all above/below classes
+            $('.page').each(function(index){
+                $(this).removeClass('above below target');
+                $(this).addClass(index < current ? 'above' : 'below');
+            });
+
             let obj = $(`.page:nth-of-type(${current+2})`);
-            $(obj).removeClass('above below');
-            $(obj).addClass("target");
+            $(obj).addClass('target');
 
             let clr = $(obj).data('color');
             if(clr != undefined)
@@ -26,6 +31,7 @@ function scroll(delta){
 
 $(function(){
     size = $('.page').length - 1;
+    $('[data-scroll]').click(function(){scroll($(this).data('scroll'))});
     scroll(0);
 
     //#region Wheel and touch scroll

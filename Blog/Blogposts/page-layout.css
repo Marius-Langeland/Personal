@@ -54,7 +54,7 @@ body{
     z-index: 3;
 }
 
-.table-of-content:hover, .table-of-content:focus{
+.table-of-content:hover{
     width: 200px;
     background-color: #192c49ad;
 }
@@ -95,7 +95,6 @@ body{
     overflow: hidden;
     padding: 1em 2em 1em 1em;
 
-    transform: scale(.3, .2);
     top: 100vh;
     opacity: 0%;
     transition: top .9s ease, opacity 1s ease .2s, transform .8s ease;
@@ -103,27 +102,5 @@ body{
 
 .above{top:-100vh;}
 .below{top: 100vh;}
+.page:not(.target){transform: scale(.3, .2);}
 .target{top: 0; opacity: 100%; transform: scale(100%)}
-
-
-/* ICONS */
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
-.go-down{
-    width: fit-content;
-    height: fit-content;
-    font-size: 50px !important;
-    border-radius: 50%;
-    background-color: rgba(48, 42, 42, 0.279);
-    transition: box-shadow .5s ease;
-    cursor: pointer;
-}
-.go-down:hover{
-    box-shadow: 0 0 5px #aab9c54d;
-}
