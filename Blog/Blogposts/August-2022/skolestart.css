@@ -8,6 +8,34 @@
     justify-content: space-evenly;
 }
 
+h3{
+    --ends: rgba(0, 0, 0, 0);
+    --cntr: rgba(0, 0, 0, 0.8);
+
+    color: white;
+    background: linear-gradient(90deg, var(--ends) 10%, var(--cntr) 30%, var(--cntr) 70%, var(--ends) 90%);
+    
+    transition: top 0s ease .5s, opacity 0s ease .5s;
+    
+    position: absolute;
+    text-align: center;
+    font-size: calc(30px + 6vw);
+    width: 100vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    padding: 0;
+    margin: 0;
+
+    user-select: none;
+}
+
+.target h3{
+    top: 0;
+    opacity: 0;
+    transition: top 2s ease-in-out 1s, opacity .8s ease-in-out 1.2s;
+}
+
 p{
     max-width: 400px;
     width: auto;
