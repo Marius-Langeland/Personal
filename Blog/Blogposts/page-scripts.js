@@ -1,5 +1,5 @@
 let current = -1;
-let target = 4;
+let target = 0;
 let size = 0;
 
 function scroll(delta){

@@ -1,6 +1,8 @@
 :root{
     --clr-bg-text: rgba(0, 0, 0, 0.672);
     --clr-text: rgb(232, 232, 232);
+
+    --clr-main: #faa;
 }
 
 .page{
@@ -25,6 +27,8 @@ p{
     max-width: 630px;
 }
 #uke-34 p{max-width: 400px;}
+
+
 
 /* #endregion */
 
