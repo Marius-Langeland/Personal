@@ -46,8 +46,8 @@ $(function(){
         setSize();
     }
     addEventListener('touchstart', (e) => start = e.touches[0].pageY);
-    addEventListener('touchmove', (e) => end = e.touches[0].pageY);
-    addEventListener('touchend', (e) => onScroll(start - end));
+    addEventListener('touchmove', (e) => end = e.touches[0].pageY == end ? start : e.touches[0].pageY);
+    addEventListener('touchend', (e) => {onScroll(end == 0 ? 0 : start - end); end = 0;});
     addEventListener('wheel', (e) => onScroll(e.deltaY));
 
     async function onScroll(delta){
