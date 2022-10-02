@@ -1,5 +1,6 @@
 :root{
-    --clr-bg-text: rgba(0, 0, 0, 0.078);
+    --clr-bg-text: rgba(0, 0, 0, 0.672);
+    --clr-text: rgb(232, 232, 232);
 }
 
 .page{
@@ -13,6 +14,8 @@ p{
     padding: 1em;
     border-radius: 5px;
     background: var(--clr-bg-text);
+    color: var(--clr-text);
+    font-size: large;
 }
 
 /* #region Uke 34 */
@@ -20,10 +23,9 @@ p{
     height: 100%;
     width: 100%;
     max-width: 630px;
-    grid-area: i;
 }
-#uke-34 h3 {grid-area: t;}
-#uke-34 p{grid-area: p; max-width: 400px;}
+#uke-34 p{max-width: 400px;}
+
 /* #endregion */
 
 /* #region Uke 35 */
