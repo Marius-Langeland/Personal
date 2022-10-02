@@ -14,7 +14,7 @@ h1{
     font-size: min(8vw, 5em);
 }
 
-/* Table of content */
+/* #region Table of content */
 
 .full-height {height: 100vh;}
 
@@ -84,11 +84,15 @@ h1{
     padding-left: 1em;
 }
 
+/* #endregion */
+
+
 /* PAGE */
 
 .page{
     display: flex;
     flex-direction: column;
+
     position: absolute;
     height: 100vh;
     width: 100vw;
