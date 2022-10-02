@@ -2,12 +2,20 @@
     --clr-bg-text: rgba(0, 0, 0, 0.672);
     --clr-text: rgb(232, 232, 232);
 
-    --clr-main: #faa;
+    --clr-main: rgb(45, 68, 99);
+}
+
+body{
+    background-color: var(--clr-main);
 }
 
 .page{
     align-items: center;
     justify-content: space-evenly;
+}
+
+h1{
+    color: white; text-shadow: 5px 5px 5px black;
 }
 
 h3{
@@ -21,7 +29,7 @@ h3{
     
     position: absolute;
     text-align: center;
-    font-size: calc(30px + 6vw);
+    font-size: min(20vw, 7em);
     width: 100vw;
     top: 50%;
     transform: translate(0, -50%);
@@ -84,6 +92,17 @@ svg:hover #envelope-lid{
 }
 
 #søknader{display: none;}
+
+/* #endregion */
+
+/* #region Uke 38 */
+
+#uke-38 img{
+    height: 50%;
+    border-radius: 1em;
+}
+
 /* #endregion */
 
 #goto{cursor: pointer;}
+
