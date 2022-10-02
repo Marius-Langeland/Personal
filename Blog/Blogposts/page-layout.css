@@ -7,9 +7,6 @@ body{
     font-family: 'Dosis', sans-serif; 
     overflow: hidden;
     position: fixed;
-
-    background-color: #233748;
-    transition: background-color 2s ease;
 }
 * {box-sizing: border-box;}
 
