@@ -2,7 +2,7 @@
     --clr-bg-text: rgba(0, 0, 0, 0.672);
     --clr-text: rgb(232, 232, 232);
 
-    --clr-main: rgb(45, 68, 99);
+    --clr-main: rgb(9, 14, 21);
 }
 
 body{
@@ -15,7 +15,7 @@ body{
 }
 
 h1{
-    color: white; text-shadow: 5px 5px 5px black;
+    color: white; text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 h3{
@@ -63,8 +63,6 @@ p{
     max-width: 630px;
 }
 #uke-34 p{max-width: 400px;}
-
-
 
 /* #endregion */
 

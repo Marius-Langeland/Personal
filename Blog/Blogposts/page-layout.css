@@ -1,3 +1,9 @@
+:root{
+    --clr-scroller: #ffffff;
+    --clr-scrollbar: #8ef7ff37;
+    --clr-table-of-content: #000000f4;
+}
+
 body{
     margin: 0; 
     height: 100vh;
@@ -37,7 +43,7 @@ h1{
 
 .progress-parent{
     height: 100%;
-    background-color: rgba(40, 26, 73, 0.31);
+    background-color: var(--clr-scrollbar);
     border-radius: 2em;
     display: flex;
     flex-direction: column;
@@ -48,16 +54,16 @@ h1{
 
 .progress-display{
     border-radius: 1em;
-    width: 9px;
+    width: 5px;
     height: 30px;
     mix-blend-mode: lighten;
-    background-color: #0d2640;
+    background-color: var(--clr-scroller);
     z-index: 3;
 }
 
 .table-of-content:hover{
     width: 200px;
-    background-color: #192c49ad;
+    background-color: var(--clr-table-of-content);
 }
 
 .table-of-content ol{
