@@ -31,7 +31,7 @@ h3{
     text-align: center;
     font-size: min(20vw, 7em);
     width: 100vw;
-    top: 50%;
+    top: 10%;
     transform: translate(0, -50%);
     left: 0;
     padding: 0;
@@ -41,9 +41,9 @@ h3{
 }
 
 .target h3{
-    top: 30%;
+    top: 0%;
     opacity: 0;
-    transition: top .4s ease-in 1s, opacity .4s ease-in-out 1s;
+    transition: top .4s ease-in 2s, opacity .4s ease-in-out 2s;
 }
 
 p{
