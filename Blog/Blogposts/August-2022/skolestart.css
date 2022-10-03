@@ -41,9 +41,9 @@ h3{
 }
 
 .target h3{
-    top: 0;
+    top: 30%;
     opacity: 0;
-    transition: top 2s ease-in-out 1s, opacity .8s ease-in-out 1.2s;
+    transition: top .4s ease-in 1s, opacity .4s ease-in-out 1s;
 }
 
 p{
