@@ -31,7 +31,7 @@ h3{
     text-align: center;
     font-size: min(20vw, 7em);
     width: 100vw;
-    top: 10%;
+    top: 50%;
     transform: translate(0, -50%);
     left: 0;
     padding: 0;
@@ -43,7 +43,7 @@ h3{
 .target h3{
     top: 0%;
     opacity: 0;
-    transition: top .4s ease-in 2s, opacity .4s ease-in-out 2s;
+    transition: top .5s ease-in 1.2s, opacity .4s ease-in-out 1.3s;
 }
 
 p{
@@ -57,12 +57,41 @@ p{
 }
 
 /* #region Uke 34 */
+
+#uke-34 .bgr-clr{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+
+    bottom: 0;
+    transition: all 1s ease;
+}
+
+#uke-34.target .bgr-clr {
+    background-color: #581a14;
+    box-shadow: 0 0 80em 18em #f45304;
+    transition: all 6s ease;
+}
+
 #uke-34 iframe{
     height: 100%;
     width: 100%;
     max-width: 630px;
 }
+#uke-34 iframe+iframe{
+    display: hidden;
+}
 #uke-34 p{max-width: 400px;}
+
+@media screen and (min-width: 800px) {
+    #uke-34{
+        display: grid;
+
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 2fr 2fr;
+    }
+}
 
 /* #endregion */
 
@@ -71,18 +100,28 @@ svg{
     width: 150px;
     cursor: pointer;
 }
+
+:root{--env-fill: rgb(240, 233, 219);}
 #envelope-fill{
-    fill: rgb(19, 19, 39);
+    fill: var(--env-fill);
 }
 #envelope-cover-l {
-    fill: rgb(144, 162, 205);
+    fill: var(--env-fill);
+    stroke: black;
+    stroke-width: 8px;
+    transition: .4s;
 }
 #envelope-cover-r {
-    fill: rgb(67, 108, 184);
+    fill: var(--env-fill);
+    stroke: black;
+    stroke-width: 8px;
+    transition: .4s;
 }
 #envelope-lid{
-    fill: rgb(19, 19, 39);
-    transition: .4s;
+    fill: var(--env-fill);
+    stroke: black;
+    stroke-width: 8px;
+    transition: .3s ease;
 }
 
 svg:hover #envelope-lid{

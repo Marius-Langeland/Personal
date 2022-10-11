@@ -19,10 +19,6 @@ function scroll(delta){
 
             let obj = $(`.page:nth-of-type(${current+2})`);
             $(obj).addClass('target');
-
-            let clr = $(obj).data('color');
-            if(clr != undefined)
-                $('body').css('background-color', clr);
         }
 
         $('.progress').css('flex-grow', `${target / size}`)
