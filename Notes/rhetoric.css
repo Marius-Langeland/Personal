@@ -60,7 +60,7 @@ h3{font-size: 2em;}
     transition: color 600ms ease;
 }
 
-.term:hover{
+.term:hover, .term.open{
     color: var(--text-clr-primary);
 }
 
