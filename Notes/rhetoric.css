@@ -25,7 +25,7 @@ section{
     display: grid;
     
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
@@ -36,23 +36,36 @@ section{
     }
 }
 
-.introduction, h1{
+.introduction{font-size: x-large;}
+h1{font-size: 3em;}
+.introduction, h1, .line{
     grid-column: 1 / -1;
     text-align: center;
+}
+
+.line{
+    height: 3px;
+    margin: 2em 1em;
+    border-radius: 5em;
+    background-color: rgba(255, 255, 255, 0.146);
 }
 
 h1, h3{font-family: sans;}
 h3{font-size: 2em;}
 
-.term{
+
+.term, .argument{
     background: var(--card-clr-primary);
-    color: var(--card-clr-accent);
     border: 1px solid var(--card-clr-accent);
     border-radius: 1em;
+    padding: 1em;
+}
+
+.term{
+    color: var(--card-clr-accent);
     height: 300px;
     
     text-align: center;
-    padding: 1em;
 
     user-select: none;
     cursor: pointer;
