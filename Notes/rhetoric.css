@@ -7,32 +7,31 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-
 body{
-    font-family: sans-serif;
+    background-color: var(--bgr-clr-primary);
     box-sizing: border-box;
-    display: grid;
-    
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
     margin: 0;
     padding: 1em;
-
-    grid-gap: 1em;
-    grid-template-columns: 1fr;
-    background-color: var(--bgr-clr-primary);
 }
 
-@media screen and (min-width: 520px) {
-    body{
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    }
+section{
+    font-family: sans-serif;
+    display: grid;
+    
+    width: 100%;
+    max-width: 1000px;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+@media screen and (min-width: 600px) {
     .argument{
         grid-column: span 2;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    body {
-        padding: 1em 20%;
     }
 }
 
