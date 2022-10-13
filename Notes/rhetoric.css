@@ -20,6 +20,7 @@ body{
 }
 
 section{
+    color: var(--text-clr-primary);
     font-family: sans-serif;
     display: grid;
     
