@@ -84,3 +84,20 @@ h3{font-size: 2em;}
 .stems-from{
     margin-top: 1em;
 }
+
+:root{
+    --clr-logos: rgb(231, 142, 142);
+    --clr-pathos: rgb(156, 156, 219);
+    --clr-ethos: rgb(214, 223, 162);
+}
+
+[data-reference="pathos"]{color: var(--clr-pathos);}
+[data-reference="ethos"] {color: var(--clr-ethos);}
+[data-reference="logos"] {color: var(--clr-logos);}
+
+[data-reference="pathos"]:hover,
+[data-reference="ethos"]:hover,
+[data-reference="logos"]:hover {
+    filter: saturate(0%);
+    cursor: pointer;
+}
