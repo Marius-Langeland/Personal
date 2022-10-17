@@ -85,6 +85,11 @@ h3{font-size: 2em;}
     margin-top: 1em;
 }
 
+.example{
+    padding-top: 2em;
+    font-style: italic;
+}
+
 :root{
     --clr-logos: rgb(231, 142, 142);
     --clr-pathos: rgb(156, 156, 219);
