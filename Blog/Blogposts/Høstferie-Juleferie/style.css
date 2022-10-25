@@ -42,6 +42,7 @@ body{
 
 #blog-title, #blog-footer{
     display: flex;
+    align-self: center;
 }
 .page-title{
     grid-area: t;
@@ -54,6 +55,10 @@ body{
     justify-content: space-between;
 }
 
+.slideshow{
+    display: flex;
+}
+
 .slideshow img{
-    height: 320px;
+    height: 410px;
 }
