@@ -39,6 +39,9 @@ body{
 .events{
     grid-area: s;
 }
+.events>div{
+    text-align: center;
+}
 
 #blog-title, #blog-footer{
     display: flex;
