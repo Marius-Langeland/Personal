@@ -40,8 +40,12 @@ body{
     grid-area: s;
 }
 
+#blog-title, #blog-footer{
+    display: flex;
+}
 .page-title{
     grid-area: t;
+    text-align: center;
 }
 
 .content{
