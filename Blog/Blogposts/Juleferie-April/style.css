@@ -1,11 +1,17 @@
 *{box-sizing: border-box;}
 
+:root{
+    --clr-bgr: rgb(31, 22, 16);
+    --clr-txt: rgb(73, 35, 18);
+    --clr-body: rgb(236, 213, 198);
+}
+
 body{
     margin: 0;
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background-color: rgb(31, 22, 16);
+    background-color: var(--clr-bgr);
 }
 
 main{
@@ -15,7 +21,7 @@ main{
     max-width: 550px;
     width: 100%;
 
-    color: rgb(99, 52, 30);
+    color: var(--clr-txt);
 }
 
 main .week:first-of-type{
@@ -28,7 +34,7 @@ main .week{
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     padding: 1em 2em;
-    background-color: rgb(236, 213, 198);
+    background-color: var(--clr-body);
     box-shadow: 0em 0em 22em -2em rgb(94, 73, 54);
     min-height: 300px;
 }
@@ -46,20 +52,37 @@ p{
 
 .align-right{align-self: end; text-align: right;}
 
+hr{
+    margin: .5rem 0;
+    border: none;
+    opacity: 60%;
+    border-top: 2px dotted var(--clr-body);
+}
+
+.rainbow{
+    font-weight: bolder;
+    background: -webkit-linear-gradient(0deg, orangered, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
 footer{
     height: 150px;
-    background-color: rgb(65, 36, 28);
+    background-color: var(--clr-txt);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     border-radius: 0 0 2em 2em;
-    color: rgb(247, 227, 214);
+    color: var(--clr-body);
 
     display: flex;
     justify-content: end;
     align-items: flex-end;
     padding: .2em 2em;
+
+    font-weight: bold;
 }
 
 footer {
@@ -68,4 +91,4 @@ footer {
       radial-gradient(46.96px at 50% -42px,#0000 99%,#000 101%) 50% 21px/84px 100% repeat-x;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-  }
+}
