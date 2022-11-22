@@ -27,9 +27,8 @@ main .week{
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 20px;
     padding: 1em 2em;
-    background-color: rgb(247, 227, 214);
+    background-color: rgb(236, 213, 198);
     box-shadow: 0em 0em 22em -2em rgb(94, 73, 54);
     min-height: 300px;
 }
