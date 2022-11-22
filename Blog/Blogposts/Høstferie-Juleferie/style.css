@@ -69,3 +69,14 @@ body{
 #uke-43 embed{
     width: 100%;
 }
+
+#uke-46 .content div{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+}
+
+#uke-46 .content div img{
+    border-radius: .5rem;
+}
