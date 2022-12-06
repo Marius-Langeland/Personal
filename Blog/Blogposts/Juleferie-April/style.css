@@ -3,7 +3,7 @@
 :root{
     --clr-bgr: rgb(31, 22, 16);
     --clr-txt: rgb(73, 35, 18);
-    --clr-body: rgb(236, 213, 198);
+    --clr-body: rgb(243, 232, 224);
 }
 
 body{
@@ -18,7 +18,7 @@ main{
     margin: 10vh 1em 0;
     display: flex;
     flex-direction: column;
-    max-width: 550px;
+    max-width: 650px;
     width: 100%;
 
     color: var(--clr-txt);
@@ -33,10 +33,12 @@ main .week{
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
-    padding: 1em 2em;
+    padding: 1em 2em 3em;
     background-color: var(--clr-body);
     box-shadow: 0em 0em 22em -2em rgb(94, 73, 54);
-    min-height: 300px;
+    min-height: 400px;
+
+    font-size: 1.1em;
 }
 
 main .week:last-of-type{
