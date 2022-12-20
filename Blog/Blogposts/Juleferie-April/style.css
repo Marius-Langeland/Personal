@@ -49,7 +49,6 @@ main .week:last-of-type{
 }
 
 p{
-    max-width: 300px;
 }
 
 .align-right{align-self: end; text-align: right;}
