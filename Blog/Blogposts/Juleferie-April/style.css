@@ -90,13 +90,3 @@ footer {
     -webkit-mask: var(--mask);
             mask: var(--mask);
 }
-
-#week-52{
-    background-image: url('https://cdn.discordapp.com/attachments/1058068137783865465/1059736083929256006/Geezmo_Beautiful_fireworks_light_up_the_dark_skies._Fjord_in_th_fe3a922f-8887-480c-bcf4-f06038d01dd1.png');
-
-    aspect-ratio: 2/3;
-
-    background-position: center;
-    background-size: cover;
-    color: white;
-}
