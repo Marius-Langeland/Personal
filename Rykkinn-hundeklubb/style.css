@@ -1,0 +1,36 @@
+img{max-width: 100%;}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    height: 20vh;
+}
+
+.main{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem 4rem;
+
+    text-align: center;
+}
+.activities>span{
+    width: 100%;
+}
+.activities>div{
+    max-width: 200px;
+}
+.activities img{
+    border-radius: 50%;
+}
